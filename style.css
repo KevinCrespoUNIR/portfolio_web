@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    font-family: "Open Sans", sans-serif;
+}
+body{
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    background: linear-gradient(to top right, rgb(21, 168, 213), rgb(22, 105, 199));
+    min-height: 100vh;
+    display:flex;
+    flex-wrap: wrap;
+}
+section{
+    position:relative; 
+    width: 100%;
+    min-height: 100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:100px;
+}
+
+/* HEADER */
+header{
+    position:absolute;
+    top:0px;
+    left:0px;
+    width: 100%;
+    padding:40px 100px;
+
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+header .logo{
+    color:white;
+    font-size:1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    background:rgba(15, 224, 15, 0.324);
+    border-radius: 5px;
+    padding:0px 10px;
+    font-weight: 600;
+    margin-left: 32px;
+    margin-top:20px;
+    font-family: "Open Sans", sans-serif;
+    font-style:italic;
+}
+header .logo:hover{
+    color:green;
+    background-color: white;
+    transition:0.2s;
+    box-shadow: 0px 0px 10px 4px rgb(255, 255, 255);
+}
+header .navbar{
+    position:relative;
+    display:flex;
+    margin-right: 170px;
+}
+header .navbar li{
+    list-style:none;
+    margin-left:30px;
+}
+header .navbar li a{
+    text-decoration: none;
+    color:white;
+    font-weight: 600;
+    padding:10px;
+    transition: 0.3s;
+    font-size:0.9em;
+    text-transform:uppercase;
+}
+header .navbar li a:hover{
+    border-bottom: 5px solid rgba(15, 224, 15, 0.412);
+    padding:2px;
+}
+
+/* INICIO */
+.contenido{
+    position:relative;
+    width: 100%;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-left:30px;
+}
+.contenido .tituloBox{
+    position:relative;
+    max-width: 700px;
+    text-align:center;
+}
+.contenido .tituloBox h2{
+    font-size: 3em;
+    text-transform: uppercase;
+    color:white;
+}
+.contenido .tituloBox h2 span{
+    background:rgba(62, 21, 224, 0.521);
+    color:white;
+    padding:0px 10px;
+    font-family:"Lora", serif;
+    font-style:italic;
+    font-weight: 600;
+    border-radius: 20px;
+
+    display:inline-block;
+    margin-bottom: 30px;
+}
+.contenido .tituloBox p{
+    font-size:2em;
+    line-height: 1.0;
+    color:white;
+    font-family:"Lora", serif;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.contenido .tituloBox .quiensoy-parrafo{
+    text-align: left;
+    font-family:'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style:italic ;
+    font-size:25px;
+    font-weight: 600;
+}
+.contenido .tituloBox .sobre-mi{
+    text-decoration: none;
+    text-transform: uppercase;
+    color:green;
+    background:white;
+    padding:10px 20px;
+    margin-left: 30px;
+    border-radius:20px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    position:absolute;
+    top:320px;
+    left:200px;
+    margin-top: 0px;
+}
+.contenido .tituloBox a:hover{
+    color:white;
+    background-color: rgb(62, 21, 224);
+    transition:0.3s;
+}
+.contenido .imgBox{
+    display:flex;
+    justify-content:flex-end;
+    width: 600;
+    padding-right: 50px;
+    margin-top: -50px;
+    z-index: -5;
+}
+.contenido .imgBox img{
+    height: 80vh;
+    margin-top:15px;
+}
+.contenido .imgBox img:hover{
+    height: 80vh;
+}
+
+/* CURRÍCULUM */
+.contenido .cv{
+    color:white;
+    text-align: left;
+    font-family:'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style:italic ;
+    font-size:20px;
+}
+.contenido .cv h2 span{
+    font-size: 1.5em;
+    background:rgba(60, 21, 224, 0.521);
+    color:white;
+    padding:0px 10px;
+    font-family:"Lora", serif;
+    font-style:italic;
+    font-weight: 600;
+    border-radius: 20px;
+
+    display:inline-block;
+    margin-top: 10px;
+}
+.contenido .cv h2{
+    text-decoration: underline;
+    margin-top:10px;
+    margin-bottom:15px;
+}
+.contenido .cv .seccion-cv{
+    margin-bottom:10px;
+}
+.contenido .cv ul{
+    margin-left: 22px;
+}
+
+/* PROYECTOS */
+.contenido .proyectos{
+    display:flex;
+    flex-direction: column;
+}
+.proyectos h2 {
+    width: 200px;
+    margin-bottom: 10px;
+    margin: auto;
+    margin-bottom:20px;
+}
+.contenido .proyectos h2 span {
+    display: inline-block; /* para que respete padding, border-radius, etc. */
+    padding: 5px 15px;
+    width: auto;
+    text-align: center;
+    background: rgba(60, 21, 224, 0.521);
+    border-radius: 20px;
+}
+.contenedor-tarjetas{
+    display:flex;
+    flex-wrap: wrap;
+}
+.contenido .proyectos span{
+    font-size: 1.5em;
+    background:rgba(60, 21, 224, 0.521);
+    color:white;
+    padding:0px 10px;
+    font-family:"Lora", serif;
+    font-style:italic;
+    font-weight: 600;
+    border-radius: 20px;
+    display:block;
+    width: 100%;
+}
+.card{
+    position:relative;
+    width: 260px;
+    height: 350px;
+    margin:10px;
+}
+.card .face{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* determina si la cara posterior será visible o no */
+    border-radius: 10px;
+    overflow:hidden;
+    transition:0.5s;
+}
+.card .front{
+    transform:perspective(600px) rotateY(0deg);
+    box-shadow: 0px 5px 10px #000;
+}
+.card .front img{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+
+    /* indica como el contenido de un elemento deberá ser
+    redimensionado para ajustarse  a su contenedor */
+    object-fit: cover;
+}
+.card .front h3{
+    position:absolute;
+    bottom:0px;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color:white;
+    background: rgb(0,0,0,0.4);
+    text-align:center;
+}
+.card .back{
+    transform:perspective(600px) rotateY(180deg);
+    background: rgba(60, 21, 224);
+    padding:15px;
+    color: #f3f3f3;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align:center;
+    box-shadow: 0px 5px 10px #000;
+}
+.card .back .link{
+    border-top:1px solid #f3f3f3;
+    height: 50px;
+    line-height: 50px;
+}
+.card .back .link a{
+    color: #f3f3f3;
+}
+.card .back h3{
+    font-size:30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+.card .back p{
+    letter-spacing:1px;
+}
+.card:hover .front{
+    transform: perspective(600px)rotateY(180deg);
+}
+.card:hover .back{
+    transform: perspective(600px)rotateY(360deg);
+}
+
+/* CONTACTO*/
+.contenido .tituloBox p{
+    font-style:italic;
+}
+
+.cont-formulario{
+    margin:0 auto;
+    padding:50px;
+    background: rgba(62, 21, 224, 0.422);
+    border-radius: 10px;
+    margin-left: 0px;
+}
+
+.f-grupo{
+    display:flex;
+    flex-direction: column;
+    margin-bottom:20px;
+}
+
+.f-grupo label{
+    margin-bottom: 5px;
+    color:white;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+.f-grupo input, 
+.f-grupo textarea{
+    border: 3px solid #ccc;
+    border-radius: 8px;
+    font-size: 20px;
+    padding:5px;
+}
+
+.f-grupo textarea{
+    max-width: 380px;
+    max-height: 100px;
+    min-width: 380px;
+    min-height: 100px;
+}
+
+.botones{
+    display:flex;
+}
+
+.btn{
+    background-color: rgba(24, 206, 24, 0.652);
+    color:white;
+    border:none;
+    padding:10px 20px;
+    font-size: 20px;
+    border-radius: 8px;
+    margin-top:20px;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px #000;
+    margin-left: 60px;
+    font-weight: 600;
+}
+
+.btn:hover{
+    transform:scale(1.1);
+    transition: 0.1s ease-in-out;
+}
+
+/* copyright */
+.copyright{
+    position:absolute;
+    margin-bottom:35px;
+    padding: 0 100px 30px;
+    display:flex;
+    bottom:0px;
+    left:800px;
+    justify-content: center;
+}
+.copyright p{
+    color:white;
+    text-align:center;
+    margin:auto;
+}
+
+/* ICONOS RRSS */
+.redesSociales{
+    position:absolute;
+    right: 0px;
+    bottom:-30px;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding:0px 100px 30px;
+    list-style: none;
+    margin-bottom:50px;
+}
+.redesSociales li{
+    padding:10px;
+}
+.redesSociales li a{
+    color:white;
+    font-size: 2.5em;
+}
+.redesSociales li:hover a{
+    color:rgb(0, 198, 0);
+}
+.redesSociales li:hover ion-icon{
+    transform:scale(1.5) rotate(360deg);
+    transition: 0.5s ease-in-out;
+}
+
+/* CÍRCULOS */
+.der{
+    position:absolute;
+    top:0px;
+    left:0px;
+    background-color: rgba(62, 21, 224, 0.228);
+    clip-path: circle(650px at right 800px);
+    width: 100%;
+    height: 100vh;
+    z-index: -1000;
+}
+.izq{
+    position:absolute;
+    top:0px;
+    left:0px;
+    background-color: rgba(62, 21, 224, 0.115);
+    clip-path: circle(550px at left top);
+    width: 100%;
+    height: 100vh;
+    z-index: -1000;
+}
+
+
+
+

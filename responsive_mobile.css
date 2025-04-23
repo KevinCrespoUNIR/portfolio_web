@@ -1,0 +1,80 @@
+@media (max-width: 576px){
+    *{
+        margin:0px;
+        padding:0px;
+        box-sizing:border-box;
+        font-family: "Open Sans", sans-serif;
+    }
+
+    body{
+        background-repeat:no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    /* HEADER */
+    header{
+        grid-row: 1;
+        position:static;
+    }
+
+    header .navbar{
+        flex-direction:column;
+        align-items: center;
+    }
+
+    /* CONTENIDO */
+    section {
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        gap:50px;
+
+        min-height: 100vh;
+        padding:20px;
+        box-sizing: border-box;
+
+        justify-items:center;
+        align-items:start;
+    }
+
+    .contenido{
+        grid-row:2;
+
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        padding:20px;
+
+        position:static;
+        width: 100%;
+    }
+
+    .contenido .tituloBox .sobre-mi{
+        position:static;
+        width: 100%;
+        margin:auto;
+    }
+
+    .contenido p{
+        width: 90%;
+        margin:auto;
+        padding: 0 10%;
+    }
+
+    /* PROYECTOS */
+    .contenedor-tarjetas{
+        display:flex;
+        flex-direction: column;
+    }
+
+    /* RRSS */
+    .redesSociales{
+        grid-row:3;
+        position:static;
+    }
+
+    .imgBox img, .circulo, .copyright{
+        display:none;
+    }
+}
